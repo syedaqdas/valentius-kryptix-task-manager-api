@@ -1,0 +1,42 @@
+{
+  "name": "task-manager-api",
+  "version": "1.0.0",
+  "description": "Task Manager REST API with Node.js, Express, SQLite, and JWT Authentication for Valentius Kryptix WA-2 Internship",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "cross-env NODE_ENV=test jest --runInBand --detectOpenHandles --forceExit"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sqlite",
+    "jwt",
+    "rest-api",
+    "authentication"
+  ],
+  "author": "Syed Aqdas",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "verbose": true
+  }
+}
